@@ -1,7 +1,8 @@
-#### Image sequence to Video converter
+#### Image sequence to Video converter - mot15
 
-    The images have to be named in way that the standard python list sort function will sort the images in the right order.
-    Ideally that would be a numerical naming.
+    Change the train and test paths in the mot15_conversion.py file.
+    The data has to be in the folder which got extracted after downloading all data from the mot site.
+    https://motchallenge.net/data/MOT15/
 
-    Example:
-    python3 main.py --path=imgs/ --fps=30 --img_format=jpg --output_format=avi --name=video
+    Then run mot15_conversion.py
+    The videos will be stored in the folders which contain the images

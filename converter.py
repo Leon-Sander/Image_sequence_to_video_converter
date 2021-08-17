@@ -7,10 +7,10 @@ class converter:
     def __init__(self):
         pass
 
-    def convert(self, imgs_path, fps, img_format = "jpg", output_format = "avi", output_name = "converted_video"):
+    def convert(self, imgs_path, fps ,img_format = "jpg", output_format = "avi", output_name = "converted_video", output_dir = 'output/'):
         img_array, size = self.__load_imgs__(imgs_path, img_format)
-        out = cv2.VideoWriter('output/'+ output_name + '.' + output_format, cv2.VideoWriter_fourcc(*'DIVX'), fps, size)
-        
+        out = cv2.VideoWriter(output_dir + output_name + '.' + output_format, cv2.VideoWriter_fourcc(*'DIVX'), fps, size)
+
         for i in range(len(img_array)):
             out.write(img_array[i])
         out.release()

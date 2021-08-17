@@ -5,4 +5,4 @@
     https://motchallenge.net/data/MOT15/
 
     Then run mot15_conversion.py
-    The videos will be stored in the folders which contain the images
+    The videos will be stored in the folders which contain the image folders.
